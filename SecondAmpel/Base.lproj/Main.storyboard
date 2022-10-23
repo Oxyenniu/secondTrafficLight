@@ -46,18 +46,22 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                     <color key="titleShadowColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Daw-8N-Hjb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pCf-OD-24z" secondAttribute="trailing" symbolic="YES" id="94O-AY-MJF"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="leading" secondItem="pCf-OD-24z" secondAttribute="leading" id="cv5-jO-1QZ"/>
-                            <constraint firstItem="pCf-OD-24z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="gtM-MT-2Qh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCf-OD-24z" secondAttribute="bottom" constant="100" id="hcw-cT-tf3"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j5D-dt-icm"/>
-                            <constraint firstAttribute="bottom" secondItem="kwn-pF-UnC" secondAttribute="bottom" constant="363" id="wRH-On-CYu"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="y6p-oR-qiF"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="leading" secondItem="pCf-OD-24z" secondAttribute="leading" id="7LC-Kv-W0X"/>
+                            <constraint firstItem="pCf-OD-24z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cfj-gs-s26"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="HbV-h9-AEn"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9z-bP-87G"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="SXm-45-Esn"/>
+                            <constraint firstItem="pCf-OD-24z" firstAttribute="top" secondItem="kwn-pF-UnC" secondAttribute="bottom" constant="179" id="Y38-v5-TTz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwn-pF-UnC" secondAttribute="trailing" constant="160" id="cUy-EJ-Og9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCf-OD-24z" secondAttribute="bottom" constant="100" id="qib-jx-bkq"/>
                         </constraints>
                     </view>
                     <connections>
