@@ -20,19 +20,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        redLightView.layer.cornerRadius = 55
-        yellowLightView.layer.cornerRadius = 55
-        greenLightView.layer.cornerRadius = 55
-        
         startButton.layer.cornerRadius = 10
     }
+    
+    override func viewWillLayoutSubviews() {
+        
+        let resizeView = redLightView.frame.width / 2
+        
+        redLightView.layer.cornerRadius = resizeView
+        yellowLightView.layer.cornerRadius = resizeView
+        greenLightView.layer.cornerRadius = resizeView
+    }
+
 
     @IBAction func startButtonTap() {
-    
-        print(redLightView.alpha)
-        print(yellowLightView.alpha)
-        print(greenLightView.alpha)
         
         if redLightView.alpha == 0.3 && yellowLightView.alpha == 0.3 && greenLightView.alpha == 0.3 {
             startButton.setTitle("START", for: .normal)

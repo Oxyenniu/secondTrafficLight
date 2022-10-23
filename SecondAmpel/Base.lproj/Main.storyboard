@@ -17,27 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-pF-UnC">
-                                <rect key="frame" x="160" y="99" width="110" height="470"/>
-                                <subviews>
-                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="58e-LW-F73">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="q8S-59-DqS">
-                                        <rect key="frame" x="0.0" y="180" width="110" height="110"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="BLD-Gz-hZr">
-                                        <rect key="frame" x="0.0" y="360" width="110" height="110"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCf-OD-24z">
-                                <rect key="frame" x="160" y="748" width="110" height="50"/>
+                                <rect key="frame" x="160" y="823" width="110" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IeO-Ns-DZg"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="ebj-ze-Wmy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
@@ -50,18 +34,42 @@
                                     <action selector="startButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Daw-8N-Hjb"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-pF-UnC">
+                                <rect key="frame" x="134.33333333333331" y="99" width="161.33333333333331" height="624"/>
+                                <subviews>
+                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="58e-LW-F73">
+                                        <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="161.33333333333334"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="58e-LW-F73" secondAttribute="height" multiplier="1:1" id="i2x-GU-X0F"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="q8S-59-DqS">
+                                        <rect key="frame" x="0.0" y="231.33333333333331" width="161.33333333333334" height="161.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="q8S-59-DqS" secondAttribute="height" multiplier="1:1" id="bD1-Y2-qSH"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="BLD-Gz-hZr">
+                                        <rect key="frame" x="0.0" y="462.66666666666657" width="161.33333333333334" height="161.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BLD-Gz-hZr" secondAttribute="height" multiplier="1:1" id="kXW-8R-g5m"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="leading" secondItem="pCf-OD-24z" secondAttribute="leading" id="7LC-Kv-W0X"/>
-                            <constraint firstItem="pCf-OD-24z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cfj-gs-s26"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="HbV-h9-AEn"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9z-bP-87G"/>
-                            <constraint firstItem="kwn-pF-UnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="SXm-45-Esn"/>
-                            <constraint firstItem="pCf-OD-24z" firstAttribute="top" secondItem="kwn-pF-UnC" secondAttribute="bottom" constant="179" id="Y38-v5-TTz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kwn-pF-UnC" secondAttribute="trailing" constant="160" id="cUy-EJ-Og9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCf-OD-24z" secondAttribute="bottom" constant="100" id="qib-jx-bkq"/>
+                            <constraint firstItem="pCf-OD-24z" firstAttribute="centerX" secondItem="kwn-pF-UnC" secondAttribute="centerX" id="Iw1-TQ-o7q"/>
+                            <constraint firstItem="pCf-OD-24z" firstAttribute="top" secondItem="kwn-pF-UnC" secondAttribute="bottom" constant="100" id="MfF-86-Qdc"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="WaT-jo-FAk"/>
+                            <constraint firstItem="kwn-pF-UnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chi-LJ-dSK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCf-OD-24z" secondAttribute="bottom" constant="40" id="iFS-Pf-3b7"/>
+                            <constraint firstItem="pCf-OD-24z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oDo-Ju-JLr"/>
                         </constraints>
                     </view>
                     <connections>
