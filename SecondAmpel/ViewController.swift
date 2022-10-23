@@ -36,27 +36,22 @@ class ViewController: UIViewController {
         
         if redLightView.alpha == 0.3 && yellowLightView.alpha == 0.3 && greenLightView.alpha == 0.3 {
             startButton.setTitle("START", for: .normal)
-            print("Start")
         } else {
             startButton.setTitle("NEXT", for: .normal)
-            print("NEXT")
         }
        
         
         if round(redLightView.alpha * 10) / 10 == 0.3 && round(yellowLightView.alpha * 10) / 10 == 0.3 && round(greenLightView.alpha * 10) / 10 == 0.3 {
             redLightView.alpha = 1
-            print("red")
         } else if redLightView.alpha == 1 {
             redLightView.alpha = 0.3
             yellowLightView.alpha = 1
-            print("yellow")
         } else if yellowLightView.alpha == 1 {
             yellowLightView.alpha = 0.3
             greenLightView.alpha = 1
         } else if greenLightView.alpha == 1 {
             greenLightView.alpha = 0.3
             redLightView.alpha = 1
-            print("green")
         }
         }
 }
